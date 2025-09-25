@@ -3,6 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect } from 'react';
+import Logo from '../assets/img/logo.svg';
+import LinkedIn from '../assets/img/nav-icon1.svg';
+import GitHub from '../assets/img/github.png';
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -35,7 +38,7 @@ const NavBar = () => {
             <Container>
 
                 <Navbar.Brand href="#home" className={scrolled ? "scrolled" : ""}>
-                    <img src={''} alt='Logo' />
+                    <img src={Logo} alt=''/>
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -47,6 +50,15 @@ const NavBar = () => {
                         <MenuTab value="skills" displayedValue="Skills" />
                         <MenuTab value="projects" displayedValue="Projects" />
                     </Nav>
+
+                    <span className='navbar-text'>
+                        <div className='social-icon'>
+                            <a href='https://www.linkedin.com/in/ibraheem-samih-b3b521261/'><img src={LinkedIn} alt=''/></a> 
+                            {/* Put in LinkedIn */}
+                            <a href='https://github.com/Ibraheem717'><img src={GitHub} alt=''/></a> 
+                            {/* Put in GitHub */}
+                        </div>
+                    </span>
 
                 </Navbar.Collapse>
 
