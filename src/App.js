@@ -1,11 +1,13 @@
 import React from "react";
-import Button from "./components/Button";
 import NavBar from "./components/Navbar";
+import './App.css';
+import Banner from "./components/Banner";
 
 function App() {
   return (
-    <div >
+    <div>
         <NavBar />
+        <Banner />
     </div>
   );
 }
