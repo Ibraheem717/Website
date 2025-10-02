@@ -7,8 +7,7 @@ import Logo from '../assets/img/logo.svg';
 import LinkedIn from '../assets/img/nav-icon1.svg';
 import GitHub from '../assets/img/github.png';
 
-const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('home');
+const NavBar = ({ activeLink, setActiveLink }) => {
     const [scrolled, setScrolled] = useState(false);
 
     const updateActiveLink = (value) => {
@@ -16,7 +15,7 @@ const NavBar = () => {
     }
 
     const MenuTab = ({value, displayedValue}) => (
-        <Nav.Link href={`#${value}`} className={activeLink === `#${value}` ? 'active navbar-link' : 'navbar-link'} onClick={() => updateActiveLink('home')}>{displayedValue}</Nav.Link>
+        <Nav.Link href={`#${value}`} className={activeLink === `#${value}` ? 'active navbar-link' : 'navbar-link'} onClick={() => updateActiveLink(value)}>{displayedValue}</Nav.Link>
     )
 
     useEffect(() => {
@@ -47,8 +46,7 @@ const NavBar = () => {
 
                     <Nav className="me-auto">
                         <MenuTab value="home" displayedValue="Home" />
-                        <MenuTab value="skills" displayedValue="Skills" />
-                        <MenuTab value="projects" displayedValue="Projects" />
+                        <MenuTab value="project" displayedValue="Project" />
                     </Nav>
 
                     <span className='navbar-text'>

@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import headerImg from '../assets/img/header-img.svg'
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 
 const Banner = () => {
@@ -52,12 +54,21 @@ const Banner = () => {
             <Container>
                 <Row className='align-items-center'>
                     <Col xs={12} md={6} xl={7}>
-                        <span className='tagline'>
-                            Welcome to my portfolio 
-                        </span>
-                        <h1>{`Ibraheem Samih `}<span className='wrap'>{text}</span></h1>
-                        <p>About me</p>
-                        <button onClick={() => console.log('Clicked')}>Hello <i class="bi bi-arrow-right-circle" /></button>
+                        <TrackVisibility>
+                            {({ isVisible }) => 
+                                <div className={isVisible ? "animate__animated animate__fadeIn animate__slower" : ""}>
+                                    <span className='tagline'>
+                                        Welcome to my portfolio 
+                                    </span>
+                                    <h1>{`Ibraheem Samih `}<span className='wrap'>{text}</span></h1>
+                                    <p>
+                                        I am a Test Engineer with almost 2 years years of experience. I had training as a Software Consultant for
+                                        2 months. I primarily work with Python and Java. I have a degree in BSc Computer Science and hold
+                                        ISTQB Testing Foundation certificate. I've made a few projects listed. Thank you for visiting my portfolio!
+                                    </p>
+                                </div>
+                            }
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Text" />
