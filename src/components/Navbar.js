@@ -1,4 +1,3 @@
-import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -47,6 +46,7 @@ const NavBar = ({ activeLink, setActiveLink }) => {
                     <Nav className="me-auto">
                         <MenuTab value="home" displayedValue="Home" />
                         <MenuTab value="project" displayedValue="Project" />
+                        <MenuTab value="timeline" displayedValue="Timeline" />
                     </Nav>
 
                     <span className='navbar-text'>
