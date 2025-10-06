@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/logo.png";
 import LinkedIn from '../assets/img/nav-icon1.svg';
 import GitHub from '../assets/img/github.png';
 
