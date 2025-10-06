@@ -1,4 +1,4 @@
-import { Col, Container, Row, Nav, Tab } from "react-bootstrap";
+import { Col, Container, Row, Tab } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import ColourSharp2 from "../assets/img/color-sharp.png"
 import CyberCity from "../assets/img/CC.png";
@@ -69,7 +69,7 @@ const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={ColourSharp2} />
+            <img className="background-image-right" src={ColourSharp2} alt=''/>
         </section>
     )
 

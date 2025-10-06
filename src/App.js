@@ -3,6 +3,7 @@ import NavBar from "./components/Navbar";
 import './App.css';
 import Banner from "./components/Banner";
 import Projects from "./components/Projects";
+import Timeline from './components/Timeline';
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
     switch(value) {
       case 'project':
         return <Projects />;
+      case 'timeline':
+        return <Timeline />;
+      case 'banner':
       default:
         return <Banner />;
     }

@@ -296,6 +296,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+/************ Timeline Css ************/
+.timeline {
+  padding: 0 0 50px 0;
+  position: relative;
+  margin-top: 10em;
+}
+.timeline-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.timeline-text {
+  color: black;
+}
+.timeline h1 {
+  text-align: center;
+	font-size: 45px;
+	font-weight: 700;
+}
+.vertical-timeline-element-content {
+  border-left: 4px solid #06D6A0;
+}
+
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+
 /************ Projects Css ************/
 .project {
   padding: 120px 0;
