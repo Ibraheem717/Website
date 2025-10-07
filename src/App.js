@@ -6,6 +6,8 @@ import Projects from "./components/Projects";
 import Timeline from './components/Timeline';
 import { Footer } from "./components/Footer";
 
+// https://ibraheemportfolio-eke4azbhdqa5czg7.germanywestcentral-01.azurewebsites.net/
+
 function App() {
   const [activeLink, setActiveLink] = useState('banner');
 
